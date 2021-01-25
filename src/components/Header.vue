@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import { reactive, toRefs } from "vue";
 export default {
   props: {
     msg: {
@@ -10,6 +11,13 @@ export default {
       required: true,
       default: "Hay",
     },
+  },
+
+  setup() {
+    const state = reactive({
+      status: false,
+    });
+    return {...toRefs(state)};
   },
 };
 </script>

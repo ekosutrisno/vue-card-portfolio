@@ -1,12 +1,12 @@
 <template>
-  <HelloWorld msg="Selamat Datang" />
+  <Header msg="Selamat Datang" />
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header.vue";
 export default {
   components: {
-    HelloWorld,
+    Header,
   },
 };
 </script>
